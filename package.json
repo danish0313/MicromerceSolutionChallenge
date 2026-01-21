@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://danish0313.github.io/MicromerceSolutionChallenge/",
   "scripts": {
     "dev": "vite --port 3001",
     "build": "vite build",
     "serve": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
